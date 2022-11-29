@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Formulario Registro</title>
+</head>
+<body>
+    <section class="form-register">
+        
+        <form method="post" action="#">
+            <h1>Formulario de Registro</h1><br>
+
+            <div class="datos1">
+
+                <div>
+                    <h2>Nombres</h2>
+                    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre"
+                        autofocus="autofocus" required="" pattern="">
+                </div>
+                <div>
+                    <h2>Apellidos</h2>
+                    <input class="controls" type="text" name="apellidos" id="apellidos"
+                        placeholder="Ingrese su apellido" required="" minlength="2" maxlength="20" pattern="[A-Za-z]">
+                </div>
+            </div>
+
+            <div class="datos2">
+                <div>
+                    <h2>Correo</h2>
+                    <input class="controls" type="email" name="correo" id="correo" placeholder="Ejemplo@correo.com"
+                        required="">
+                </div>
+                <div>
+                    <h2>Direccion</h2>
+                    <input class="controls" type="text" name="direccion" id="direccion"
+                        placeholder="Ingrese su direccion" required="">
+                </div>
+            </div>
+
+            <div class="datos3">
+                <div>
+                    <h2>Telefono</h2>
+                    <input class="controls" type="text" name="tel" value="" maxlength="10"
+                        onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"
+                        placeholder="Ingrse su teléfono" required="" pattern="[0-9]{10}">
+
+                    <!--<input class="controls" type="number" name="telefono" id="telefono" placeholder="Ingrese su telefono" required="" pattern="[0-9]{9}">-->
+                </div>
+                <div>
+                    <h2>Fecha de nacimiento</h2>
+                    <input class="controls" type="date" required="">
+                </div>
+            </div>
+
+            <div class="datos4">
+                <div>
+                    <h2>Contraseña</h2>
+                    <input class="controls" type="password" name="contraseña" id="contraseña"
+                        placeholder="Ingrese su contraseña" required="">
+                </div>
+                <div>
+                    <h2>Confirmar contraseña</h2>
+                    <input class="controls" type="password" name="confirmarcontraseña" id="confirmarcontraseña"
+                        placeholder="confirme su contraseña" required="">
+                </div>
+            </div>
+            <br>
+            </formm>
+            <div style="text-align: center;">
+                <input class="radi" type="radio" id="condiciones" name="condiciones" value="Aceptar">
+                <label for="html">Acepto términos y condiciones</label>
+            </div><br><br>
+
+            <div style="text-align: center;">
+                <input class="button" type="submit" value="Registrar">
+
+                <!--</div>
+            <script>
+                function msg() {
+                    alert("¡Quedaste registrado!");
+                }
+            </script>-->
+                <p><a href="#">¿Ya tienes una cuenta?<a class="link" href="/html/index.html">Iniciar Sesion</a></p>
+            </form>
+    </section>
+
+</body>
+
+</html>
